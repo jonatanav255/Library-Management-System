@@ -1,4 +1,3 @@
-
 import Book.Book;
 import Library.Library;
 
@@ -13,7 +12,6 @@ public class App {
         library.addBook(new Book("1984", "George Orwell", 1949, false));
 
         // library.listBooks();
-
         library.borrowBook("The Catcher in the Rye");
         library.borrowBook("1984");
 

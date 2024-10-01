@@ -43,4 +43,25 @@ public class Library {
         }
     }
 
+    public void returnBook(String title) {
+        boolean bookFound = false;
+
+        for (Book book : listOfBooks) {
+            if (book.getTitle().equals(title) && book.isAvailable()) {
+                bookFound = true;
+                System.out.println("the book hasn't been borrowed");
+                break;
+
+            } else if (book.getTitle().equals(title) && !book.isAvailable()) {
+                bookFound = true;
+                book.setAvailable(true);
+                System.out.println("You have successfully returned: " + title);
+                break;
+            }
+        }
+        if (!bookFound) {
+            System.out.println("Sorry, the book with title '" + title + "' was not found.");
+        }
+    }
+
 }
