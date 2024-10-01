@@ -2,48 +2,47 @@ package Book;
 
 public class Book {
 
-    private String Title;
-    private String Author;
-    private int Year;
+    private String title;
+    private String author;
+    private int year;
     private boolean isAvailable;
 
     public Book(String title, String author, int year, boolean isAvailable) {
-        this.Title = title;
-        this.Author = author;
-        this.Year = year;
+        this.title = title;
+        this.author = author;
+        this.year = year;
         this.isAvailable = isAvailable;
     }
 
     public String getTitle() {
-        return Title;
+        return title;
     }
 
-    public void setTitle(String Title) {
-        this.Title = Title;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public String getAuthor() {
-        return Author;
+        return author;
     }
 
-    public void setAuthor(String Author) {
-        this.Author = Author;
+    public void setAuthor(String author) {
+        this.author = author;
     }
 
     public int getYear() {
-        return Year;
+        return year;
     }
 
     public void setYear(int year) {
-        this.Year = year;
+        this.year = year;
     }
 
-    public boolean getIsAvailable() {
+    public boolean isAvailable() {
         return isAvailable;
     }
 
-    public void setIsAvailable(boolean isAvailable) {
+    public void setAvailable(boolean isAvailable) {
         this.isAvailable = isAvailable;
     }
-
 }
